@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{13F8A2CF-A50A-479A-B42D-F70461A621CF}</ProjectGuid>
+    <ProjectGuid>{518BB8B6-334F-46D4-A637-D326B1F99B45}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App1</RootNamespace>
-    <AssemblyName>App1</AssemblyName>
+    <RootNamespace>GettingStarted</RootNamespace>
+    <AssemblyName>GettingStarted</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.26100.0</TargetPlatformVersion>
@@ -154,7 +154,7 @@
       <Version>6.2.14</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.SfSpreadsheet.UWP">
-      <Version>33.2.3</Version>
+      <Version>33.2.4</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
