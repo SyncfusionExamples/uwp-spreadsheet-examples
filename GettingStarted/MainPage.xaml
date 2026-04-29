@@ -4,15 +4,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Spreadsheet"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    xmlns:tools="using:Syncfusion.UI.Xaml.Controls.Navigation"
+    xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Spreadsheet"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Syncfusion:SfSpreadsheetRibbon DataContext="{Binding ElementName=spreadsheet}">
-            <Syncfusion:SfSpreadsheetRibbon.Content>
-                <Syncfusion:SfSpreadsheet x:Name="spreadsheet"/>
-            </Syncfusion:SfSpreadsheetRibbon.Content>
-        </Syncfusion:SfSpreadsheetRibbon>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Syncfusion:SfSpreadsheetRibbon DataContext="{Binding ElementName=spreadsheet}" Grid.Row="0"/>
+        <Syncfusion:SfSpreadsheet Name="spreadsheet" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1"/>
     </Grid>
 </Page>
